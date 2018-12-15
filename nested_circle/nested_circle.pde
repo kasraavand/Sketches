@@ -35,7 +35,7 @@ void draw(){
     
     final_attempts++;
     println(final_attempts);
-    if(final_attempts == 1000){
+    if(final_attempts == 2000){
       noLoop();
       println("FINISHED");
       break;

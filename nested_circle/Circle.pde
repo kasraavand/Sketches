@@ -22,11 +22,11 @@ class Circle{
   }
  
  boolean edges(){
-
+ 
    if(x == 500 && y == 325){
      return !(x + r > width || x - r < 0|| y + r > height || y - r < 0);
    }
-   return pow(x - 500 - r , 2) + pow(y - 325 - r, 2) - 2*pow(r, 2)< pow(325, 2);
+   return (r + sqrt(pow(x-500, 2) + pow(y-325, 2))) < 325;
  }
  
  
